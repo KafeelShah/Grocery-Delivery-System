@@ -1,11 +1,88 @@
 <!doctype HTML>
 <html>
 <head>
-<title> Order Groceries </title>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bott0 :om; 
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  backdrop-filter: blur(5px);
+}
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.3%;
+  padding: 5px;
+}
+
+
+</style>
+<title>Order Groceries</title>
 </head>
 <h2> Groceries: </h2>
-<body>
-<img src= "abundance.jpg" alt="Food" width= "100px" height= "100px"> <br>
-<p> Edibles </p> 
+<body bgcolor="Black" text="White">
+
+<div class="row">
+    <div class="column">
+        <div class = "container">
+<img src= "abundance.jpg" alt="Food" style = "height:100%; width:100%">
+<div class = "overlay"> 
+    <div class ="text"> Edibles</div>
+</div>
+</div>
+</div>
+</div>
+
+    <div class = "column">
+        <div class = "container">
+<img src= "Hygiene.jpg" alt= "Hygiene" style = "height:100%; width:100%">
+    <div class = "overlay">
+        <div class ="text">Hygiene</div>
+</div>
+</div>    
+
+<div class = "column">
+    <div class = "container">
+<img src = "Kitchen Utensils.jpg" alt= "Kitchen Utensils" style = "height:100%; width:100%">
+<div class = "overlay">
+    <div class = "text">Utensils</div>
+</div>
+</div>
 </body>
 </html>
