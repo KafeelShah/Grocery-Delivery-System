@@ -1,6 +1,99 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Hygiene Accessories</title>
-  </head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  backdrop-filter: blur(5px);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+	<title>Hygeine Accessories</title>
+</head>
+
+<body bgcolor="lightpink">
+	<div align="center" >
+		<h1>Welcome To Hygeine Accessories Section</h1>
+	</div>
+
+	<h1>Soaps</h1>
+	<div class="container">
+	<a href=""><img src="https://www.techbhavesh.com/assets/uploads/post/3276_5787_1453_190920210624031.jpg" width="200px" height="200px" class="image"></a>
+	<div class="overlay">
+	<div class="text">soap section</div>
+	</div> </a>
+	</div>
+
+	<p>We provide the best quality soaps in affordable prices</p>
+	<button onclick="location.href='https://www.w3schools.com/jsref/event_onclick.asp'">Shop Now!</button>
+
+		<h1>Shampoo</h1>
+		<a href="">
+		<div class="container">
+		<img src="https://www.functionofbeauty.com/product/shampoo-conditioner/img/carousel-3.jpg" class="image" width="200px" height="200px"> 
+		<div class="overlay">
+		<div class="text">shampoo section</div>
+		</div> </a>
+	    </div>
+		<p>Best Brand and Quality shampoo are Available</p>
+		<button onclick="location.href='https://www.w3schools.com/jsref/event_onclick.asp'">Shop Now!</button>
+
+		<h1>Detergents</h1>
+		<div class="container">
+		<a href=""><img src="https://www.ndcoman.com/storage/storage/news/March2021/pHJzWZG1mWT94DUtxl5o.JPG" width="200px" height="200px" class="image"></a>
+		<div class="overlay">
+		<div class="text">Detergents section</div>
+		</div> </a>
+	    </div>
+		<p>Best Brand and Quality Detergents are Available</p>
+		<button onclick="location.href='https://www.w3schools.com/jsref/event_onclick.asp'">Shop Now!</button>
+
+		<h1>Skin Care</h1>
+		<div class="container">
+		<a href=""><img src="https://media.theeverygirl.com/wp-content/uploads/2018/03/correct-order-to-apply-skincare-products-everygirl-horizontal.jpg" width="200px" height="200px" class="image"></a>
+		<div class="overlay">
+		<div class="text">Skin care section</div>
+		</div> </a>
+	    </div>
+		<p>Best Brand and Quality Skin Products are Available</p>
+		<button onclick="location.href='https://www.w3schools.com/jsref/event_onclick.asp'">Shop Now!</button>
+
+</body>
 </html>
